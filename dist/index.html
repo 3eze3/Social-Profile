@@ -8,27 +8,42 @@
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Social links profile</title>
   </head>
   <body>
-    <div>
-      Jessica Randall
-      <!--  -->
-      London, United Kingdom
-      <!--  -->
-      "Front-end developer and avid reader."
-    </div>
+    <main class="card">
+      <img
+        class="card__avatar"
+        src="./assets/images/avatar-jessica.jpeg"
+        alt="User Jessica Randall" />
+      <div class="card__container">
+        <h1 class="card__title">Jessica Randall</h1>
+        <span class="card__ubication">London, United Kingdom</span>
+      </div>
+      <p class="card__description">"Front-end developer and avid reader."</p>
 
-    <div>
-      GitHub
-      <!--  -->
-      Frontend Mentor
-      <!--  -->
-      LinkedIn
-      <!--  -->
-      Twitter
-      <!--  -->
-      Instagram
-    </div>
+      <nav class="card__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#" aria-label="GitHug">GitHub</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" aria-label="Frontend Mentor">
+              Frontend Mentor
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" aria-label="Linkedin">Linkedin</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" aria-label="Twitter">Twitter</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" aria-label="Instagram">Instagram</a>
+          </li>
+        </ul>
+      </nav>
+    </main>
   </body>
 </html>
