@@ -1,0 +1,15 @@
+@mixin centerBox() {
+  display: grid;
+  place-content: center;
+}
+
+@mixin flex(
+  $aling-items: center,
+  $justify-content: center,
+  $flex-direction: column
+) {
+  display: flex;
+  align-items: $aling-items;
+  justify-content: $justify-content;
+  flex-direction: $flex-direction;
+}
