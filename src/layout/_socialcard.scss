@@ -1,0 +1,24 @@
+@use "../abtract/mixins" as layout;
+.card {
+  border-radius: 1.2rem;
+  padding: 2.2rem 2.4rem;
+  @include layout.flex($justify-content: flex-start);
+  width: 23rem;
+  &__avatar {
+    width: 5.5rem;
+    border-radius: 50%;
+  }
+  &__container {
+    width: 100%;
+    text-align: center;
+    margin-block: 2rem;
+  }
+
+  &__title {
+    margin-bottom: 0.4rem;
+  }
+
+  &__description {
+    margin-bottom: 1.5rem;
+  }
+}
