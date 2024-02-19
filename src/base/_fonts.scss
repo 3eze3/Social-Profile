@@ -1,0 +1,50 @@
+@use "../abtract/variables" as color_bg;
+@use "../abtract/mixins" as layout;
+
+@font-face {
+  font-family: "Inter Rg";
+  src: url("../assets/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter SmB";
+  src: url("../assets/fonts/Inter-SemiBold.ttf");
+}
+
+body {
+  min-height: 100dvh;
+  font-size: 100%;
+  font-family: "Inter SmB";
+  hyphens: manual;
+  font-smooth: always;
+  background-color: color_bg.$off-black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // mixins
+  @include layout.centerBox();
+}
+
+h1 {
+  color: color_bg.$white;
+  font-size: color_bg.$lg;
+  letter-spacing: 0.012em;
+}
+
+span {
+  color: color_bg.$green;
+  font-size: color_bg.$md;
+}
+
+p {
+  color: color_bg.$grey-ligh;
+  font-family: "Inter Rg";
+  font-size: color_bg.$md;
+}
+
+a {
+  display: block;
+  height: 100%;
+  color: color_bg.$white;
+  font-size: color_bg.$rg;
+  text-decoration: none;
+}
