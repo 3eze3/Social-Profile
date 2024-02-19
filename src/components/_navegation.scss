@@ -1,0 +1,22 @@
+@use "../abtract/variables" as color_bg;
+@use "../abtract/mixins" as layout;
+.nav {
+  width: 100%;
+  &__item {
+    border-radius: color_bg.$round;
+    background-color: color_bg.$grey;
+    height: 2.75rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  &__link {
+    border-radius: color_bg.$round;
+    @include layout.flex();
+    transition: background-color ease 1s, color ease-in 1s;
+    &:hover {
+      background-color: color_bg.$green;
+      color: color_bg.$dark-grey;
+      transition: background-color ease 0.5s, color ease-in 0.2s;
+    }
+  }
+}
