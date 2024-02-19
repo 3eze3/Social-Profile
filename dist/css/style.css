@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Inter Rg";
+  src: url("../assets/fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter SmB";
+  src: url("../assets/fonts/Inter-SemiBold.ttf");
+}
+body {
+  min-height: 100dvh;
+  font-size: 100%;
+  font-family: "Inter SmB";
+  hyphens: manual;
+  font-smooth: always;
+  background-color: hsl(0deg, 0%, 8%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.5em;
+  letter-spacing: 0.012em;
+}
+
+span {
+  color: hsl(75deg, 94%, 57%);
+  font-size: 0.85em;
+}
+
+p {
+  color: hsl(0deg, 0%, 82%);
+  font-family: "Inter Rg";
+  font-size: 0.85em;
+}
+
+a {
+  display: block;
+  height: 100%;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.95em;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  background-color: hsl(0deg, 0%, 12%);
+}
+
+.nav {
+  width: 100%;
+}
+.nav__item {
+  border-radius: 0.37rem;
+  background-color: hsl(0deg, 0%, 21%);
+  height: 2.75rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.nav__link {
+  border-radius: 0.37rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: background-color ease 1s, color ease-in 1s;
+}
+.nav__link:hover {
+  background-color: hsl(75deg, 94%, 57%);
+  color: hsl(0deg, 0%, 12%);
+  transition: background-color ease 0.5s, color ease-in 0.2s;
+}
+
+.card {
+  border-radius: 1.2rem;
+  padding: 2.2rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 23rem;
+}
+.card__avatar {
+  width: 5.5rem;
+  border-radius: 50%;
+}
+.card__container {
+  width: 100%;
+  text-align: center;
+  margin-block: 2rem;
+}
+.card__title {
+  margin-bottom: 0.4rem;
+}
+.card__description {
+  margin-bottom: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
